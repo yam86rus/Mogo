@@ -17,7 +17,6 @@ body {
 }
 
 
-
 /* Container */
 .container {
     width: 100%;
@@ -57,7 +56,7 @@ body {
     font-size: 14px;
 }
 
-.nav__link  {
+.nav__link {
     display: inline-block;
     vertical-align: top;
     margin: 0 0 0 55px;
@@ -89,6 +88,7 @@ body {
     color: #FCE38A;
 
 }
+
 .nav__link:hover:after {
     opacity: 1;
 }
@@ -201,22 +201,136 @@ body {
 
 }
 
+/* Section */
+.section {
+    padding: 80px 0;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+.section__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #F38181;
+    margin: 33px auto 42px;
+}
+
+.section__text {
+    color: #999999;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* About */
+.about {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    width: 380px;
+    position: relative;
+    background-color: #95E1D3;
+}
+
+.about__item:hover .about__image {
+    transform: translate3d(-10px, -10px,0);
+}
+
+.about__item:hover .about__image img{
+    opacity: .1;
+}
+.about__item:hover .about__text {
+    opacity: 1;
+}
+
+.about__image {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+
+    transition: transform .1s linear;
+}
+
+.about__image img {
+    display: block;
+    transition: opacity .1s linear;
+
+}
+.about__text {
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0,-50%,0);
+    transition: opacity .2s linear;
+}
 
 
+/* Statistic */
 
+.statistic {
+    background-color: #95E1D3;
+}
 
+.stat {
+    display: flex;
+}
 
+.stat__item {
+    flex: 1 1 0;
+    padding: 70px 25px;
+    border-left: 1px solid #B5EAE1;
+    color: #fff;
 
+    text-align: center;
+}
 
+.stat__item:last-child {
+    border-right: 1px solid #B5EAE1;;
+}
 
+.stat__count {
+    margin-bottom: 10px;
 
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
 
-
-
-
-
-
-
+.stat__text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
 
 
