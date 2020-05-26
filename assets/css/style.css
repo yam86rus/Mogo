@@ -93,7 +93,6 @@ hr{
 
 .nav__link:hover {
     color: #FCE38A;
-
 }
 
 .nav__link:hover:after {
@@ -590,5 +589,153 @@ right: -80px;
 .logo{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+/* Works */
+
+.works{
+    display: flex;
+}
+
+.works__column{
+    flex: 1 1 auto;
+}
+
+.works__item{
+    position: relative;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.works__item:hover .works__image{
+opacity: .1;
+}
+
+.works__item:hover .works__info{
+    opacity: 1;
+}
+
+.works__info{
+opacity: 0%;
+position: absolute;
+top: 50%;
+left: 0;
+transform: translate3d(0,-50%,0);
+text-align: center;
+width: 100%;
+
+transition: opacity .2s linear;
+}
+
+
+
+.works__image{
+    transition: opacity .2s linear;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.works__title{
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-size: 14px;
+
+}
+
+.works__text{
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    font-weight: 300;
+
+}
+
+/* reviews -2 */
+
+.reviews__photo--round {
+    border-radius: 50%;
+    height: 210px;
+    border: none;
+}
+
+.reviews__text--small{
+    padding-left: 50px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+
+}
+
+.reviews__author--small{
+    padding-left: 50px;
+}
+
+/* happy clients */
+.sectioon--happyClients{
+    background: #f5f5f5 url("/assets/images/happyClients/hc-1.png") center no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    margin-bottom: 80px;
+}
+
+/* Clients */
+
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients__item{
+    position: relative;
+    width: 50%;
+
+}
+.clients__photo{
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+.clients__info{
+    padding-left: 180px;
+}
+
+.clients__name{
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333; 
+    margin-bottom: 7px;
+}
+.clients__prof{
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.clients__prof:after{
+    content: "";
+    display: block;
+    margin: 17px 0 0;
+    width: 60px;
+    height: 3px;
+    z-index: 1;
+    background-color: #F38181;
+}
+
+.clients__text{
+    padding-left: 180px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999999;
+    padding-bottom: 80px;
+    padding-right: 70px;
+
 }
